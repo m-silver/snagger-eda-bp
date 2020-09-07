@@ -1,0 +1,34 @@
+import React from 'react'
+
+import { Link } from 'react-router-dom'
+
+class Login extends React.Component {
+  state = {
+    username: 'username',
+    password: 'password'
+  }
+
+  handleChange = (evt) => {
+    const { name, value } = evt.target
+    this.setState({
+      [name]: value // [name] is computed based on the input name coming through the evt.target, used for object keys
+    })
+  }
+
+  handleClick = () => {
+
+  }
+
+  render () {
+    return (
+      <div>
+        <h2>LOGIN</h2>
+        <input name='username' value={this.state.username} onChange={this.handleChange} /><br></br>
+        <input name='password' value={this.state.password} onChange={this.handleChange} /><br></br>
+        <Link to='/dashboard'><button onClick={this.handleClick}>Login</button></Link>
+      </div>
+    )
+  }
+}
+
+export default Login

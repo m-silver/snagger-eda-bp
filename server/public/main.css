@@ -1,0 +1,9 @@
+/* #app {
+
+} */
+
+.defectForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
