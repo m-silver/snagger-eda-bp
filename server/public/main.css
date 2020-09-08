@@ -1,6 +1,29 @@
-/* #app {
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-} */
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(77, 151, 214);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 15%;
+  margin-bottom: -30px;
+}
 
 .defectForm {
   display: flex;

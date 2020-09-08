@@ -21,8 +21,9 @@ class Login extends React.Component {
 
   render () {
     return (
-      <div>
-        <h2>LOGIN</h2>
+      <div className='login-container'>
+        <img className='logo' src='/images/logo.png'></img>
+        <h1>SNAGGER</h1>
         <input name='username' value={this.state.username} onChange={this.handleChange} /><br></br>
         <input name='password' value={this.state.password} onChange={this.handleChange} /><br></br>
         <Link to='/dashboard'><button onClick={this.handleClick}>Login</button></Link>
