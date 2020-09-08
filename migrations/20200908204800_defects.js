@@ -1,8 +1,8 @@
 
 exports.up = (knex) => {
   return knex.schema.createTable('defects', table => {
-    table.increments('id')
-    table.integer('home_id')
+    table.increments('id').primary()
+    table.integer('home_id').references('homes.id')
     table.string('trade')
     table.string('defect_name')
     table.string('defect_description')
