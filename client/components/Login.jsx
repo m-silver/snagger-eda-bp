@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
   state = {
-    username: 'username',
-    password: 'password'
+    username: '',
+    password: ''
   }
 
   handleChange = (evt) => {
@@ -23,9 +23,9 @@ class Login extends React.Component {
     return (
       <div className='login-container'>
         <img className='logo' src='/images/logo.png'></img>
-        <h1>SNAGGER</h1>
-        <input name='username' value={this.state.username} onChange={this.handleChange} /><br></br>
-        <input name='password' value={this.state.password} onChange={this.handleChange} /><br></br>
+        <h1 className='logo-title'>SNAGGER</h1>
+        <input name='username' value={this.state.username} onChange={this.handleChange} placeholder='username'/><br></br>
+        <input name='password' value={this.state.password} onChange={this.handleChange} placeholder='password'/><br></br>
         <Link to='/dashboard'><button onClick={this.handleClick}>Login</button></Link>
       </div>
     )

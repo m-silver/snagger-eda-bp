@@ -6,9 +6,9 @@ class LogDefect extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='logDefectContainer'>
         <h2>Log Defect</h2>
-        <img src='/images/floorplan1.png'></img>
+        <img className='floorplanImage' src='/images/floorplan1.png'></img>
         <form className='defectForm'>
           <div className='defectFormTrade'>Trade:  <input name='trade'></input></div>
           <div className='defectFormName'>Defect Name: <input name='defectName'></input></div>

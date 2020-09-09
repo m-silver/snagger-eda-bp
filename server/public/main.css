@@ -1,10 +1,29 @@
+/********* APP *********/
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-#app {
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/********* LOGIN *********/
+
+.login-container {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -12,21 +31,54 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(77, 151, 214);
-  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .logo {
-  max-width: 15%;
+  max-width: 200px;
   margin-bottom: -30px;
 }
 
-.defectForm {
+.logo-title {
+  /* text-align: center; */
+}
+
+/********* NAVBAR *********/
+
+.navbar {
+  background-color: rgb(77, 151, 214);
+  /* position: fixed;
+  top: 0;
+  z-index: 99; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/********* DASHBOARD *********/
+
+/********* LOG DEFECT *********/
+
+.logDefectContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
 }
+
+.floorplanImage {
+  height: 70vh;
+  width: auto;
+}
+
+.defectForm {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+}
+
+/********* DEFECTS OUTSTANDING *********/
+
+/********* DEFECTS COMPLETED *********/
